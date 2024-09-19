@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Residential Map</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <div id="map" style="width: 600px; height: 800px"></div>
+    <script>
+        var map = L.map('map', {
+            center: [9.853970298350033, -83.945768324816], // Cambia las coordenadas según tu ubicación
+            zoom: 17 // Un zoom más alto para ver más detalles
+        });
+
+
+        var inclinedHouse = L.polygon([
+            [9.853937, -83.945417], // Esquina arriba izquierda
+            [9.853916, -83.945283], // Esquina arriba derecha
+            [9.853831, -83.945297], // Esquina abajo derecha
+            [9.853863, -83.945452]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("27F");
+
+        var inclinedHouse = L.polygon([
+            [9.853916, -83.945283], // Esquina arriba izquierda
+            [9.853884, -83.945133], // Esquina arriba derecha
+            [9.853797, -83.945141], // Esquina abajo derecha
+            [9.853831, -83.945297]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("28F");
+
+        var inclinedHouse = L.polygon([
+            [9.853863, -83.945452], // Esquina arriba izquierda
+            [9.853831, -83.945297], // Esquina arriba derecha
+            [9.853755, -83.945313], // Esquina abajo derecha
+            [9.853786, -83.945471]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("26F");
+
+        var inclinedHouse = L.polygon([
+            [9.853831, -83.945297], // Esquina arriba izquierda
+            [9.853797, -83.945141], // Esquina arriba derecha
+            [9.853734, -83.945152], // Esquina abajo derecha
+            [9.853755, -83.945313]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("29F");
+
+
+        var inclinedHouse = L.polygon([
+            [9.853786, -83.945471], // Esquina arriba izquierda
+            [9.853755, -83.945313], // Esquina arriba derecha
+            [9.853681, -83.945329], // Esquina abajo derecha
+            [9.853715, -83.945482]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("25F");
+
+        var inclinedHouse = L.polygon([
+            [9.853755, -83.945313], // Esquina arriba izquierda
+            [9.853734, -83.945152], // Esquina arriba derecha
+            [9.853649, -83.945168], // Esquina abajo derecha
+            [9.853681, -83.945329]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("30F");
+        
+        var inclinedHouse = L.polygon([
+            [9.853715, -83.945482], // Esquina arriba izquierda
+            [9.853681, -83.945329], // Esquina arriba derecha
+            [9.853612, -83.945342], // Esquina abajo derecha
+            [9.853636, -83.945493]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("24F");
+
+        var inclinedHouse = L.polygon([
+            [9.853681, -83.945329], // Esquina arriba izquierda
+            [9.853649, -83.945168], // Esquina arriba derecha
+            [9.853580, -83.945179], // Esquina abajo derecha
+            [9.853612, -83.945342]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("31F");
+
+
+        var inclinedHouse = L.polygon([
+            [9.853636, -83.945493], // Esquina arriba izquierda
+            [9.853612, -83.945342], // Esquina arriba derecha
+            [9.853541, -83.945358], // Esquina abajo derecha
+            [9.853572, -83.945514]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("23F");
+
+        var inclinedHouse = L.polygon([
+            [9.853612, -83.945342], // Esquina arriba izquierda
+            [9.853580, -83.945179], // Esquina arriba derecha
+            [9.853509, -83.945189], // Esquina abajo derecha
+            [9.853541, -83.945358]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("32F");
+
+        var inclinedHouse = L.polygon([
+            [9.853572, -83.945514], // Esquina arriba izquierda
+            [9.853541, -83.945358], // Esquina arriba derecha
+            [9.853467, -83.945374], // Esquina abajo derecha
+            [9.853493, -83.945530]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("22F");
+
+        var inclinedHouse = L.polygon([
+            [9.853541, -83.945358], // Esquina arriba izquierda
+            [9.853509, -83.945189], // Esquina arriba derecha
+            [9.853432, -83.945206], // Esquina abajo derecha
+            [9.853467, -83.945374]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("33F");
+
+        var inclinedHouse = L.polygon([
+            [9.853493, -83.945530], // Esquina arriba izquierda
+            [9.853467, -83.945374], // Esquina arriba derecha
+            [9.853401, -83.945388], // Esquina abajo derecha
+            [9.853430, -83.945541]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("21F");
+
+        var inclinedHouse = L.polygon([
+            [9.853467, -83.945374], // Esquina arriba izquierda
+            [9.853432, -83.945206], // Esquina arriba derecha
+            [9.853364, -83.945224], // Esquina abajo derecha
+            [9.853401, -83.945388]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("34F");
+
+        var inclinedHouse = L.polygon([
+            [9.853430, -83.945541], // Esquina arriba izquierda
+            [9.853401, -83.945388], // Esquina arriba derecha
+            [9.853332, -83.945404], // Esquina abajo derecha
+            [9.853369, -83.945560]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("20F");
+
+        var inclinedHouse = L.polygon([
+            [9.853401, -83.945388], // Esquina arriba izquierda
+            [9.853364, -83.945224], // Esquina arriba derecha
+            [9.853303, -83.945232], // Esquina abajo derecha
+            [9.853332, -83.945404]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("35F");
+
+        var inclinedHouse = L.polygon([
+            [9.853369, -83.945560], // Esquina arriba izquierda
+            [9.853332, -83.945404], // Esquina arriba derecha
+            [9.853258, -83.945412], // Esquina abajo derecha
+            [9.853290, -83.945570]  // Esquina abajo izquierda 
+        ], {
+            color: "#609b64",
+            weight: 1
+        }).addTo(map).bindPopup("19F");
+
+        var inclinedHouse = L.polygon([
+            [9.853332, -83.945404], // Esquina arriba izquierda
+            [9.853303, -83.945232], // Esquina arriba derecha
+            [9.853226, -83.945248], // Esquina abajo derecha
+            [9.853258, -83.945412]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("36F");
+
+        var inclinedHouse = L.polygon([
+            [9.853290, -83.945570], // Esquina arriba izquierda
+            [9.853258, -83.945412], // Esquina arriba derecha
+            [9.853181, -83.945433], // Esquina abajo derecha
+            [9.853218, -83.945592]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("18F");
+
+        var inclinedHouse = L.polygon([
+            [9.853258, -83.945412], // Esquina arriba izquierda
+            [9.853226, -83.945248], // Esquina arriba derecha
+            [9.853157, -83.945262], // Esquina abajo derecha
+            [9.853181, -83.945433]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("37F");
+
+        var inclinedHouse = L.polygon([
+            [9.853218, -83.945592], // Esquina arriba izquierda
+            [9.853181, -83.945433], // Esquina arriba derecha
+            [9.853113, -83.945448], // Esquina abajo derecha
+            [9.853144, -83.945602]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("17F");
+
+        var inclinedHouse = L.polygon([
+            [9.853181, -83.945433], // Esquina arriba izquierda
+            [9.853157, -83.945262], // Esquina arriba derecha
+            [9.853076, -83.945278], // Esquina abajo derecha
+            [9.853113, -83.945448]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("38F");
+
+        var inclinedHouse = L.polygon([
+            [9.853144, -83.945602], // Esquina arriba izquierda
+            [9.853113, -83.945448], // Esquina arriba derecha
+            [9.853039, -83.945466], // Esquina abajo derecha
+            [9.853078, -83.945619]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("16F");
+
+        var inclinedHouse = L.polygon([
+            [9.853113, -83.945448], // Esquina arriba izquierda
+            [9.853076, -83.945278], // Esquina arriba derecha
+            [9.853009, -83.945294], // Esquina abajo derecha
+            [9.853039, -83.945466]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("39F");
+
+        var inclinedHouse = L.polygon([
+            [9.853078, -83.945619], // Esquina arriba izquierda
+            [9.853039, -83.945466], // Esquina arriba derecha
+            [9.852970, -83.945479], // Esquina abajo derecha
+            [9.853002, -83.945632]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("15F");
+
+        var inclinedHouse = L.polygon([
+            [9.853039, -83.945466], // Esquina arriba izquierda
+            [9.853009, -83.945294], // Esquina arriba derecha
+            [9.852938, -83.945310], // Esquina abajo derecha
+            [9.852970, -83.945479]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("40F");
+
+        var inclinedHouse = L.polygon([
+            [9.853002, -83.945632], // Esquina arriba izquierda
+            [9.852970, -83.945479], // Esquina arriba derecha
+            [9.852896, -83.945495], // Esquina abajo derecha
+            [9.852933, -83.945645]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("14F");
+
+        var inclinedHouse = L.polygon([
+            [9.852970, -83.945479], // Esquina arriba izquierda
+            [9.852938, -83.945310], // Esquina arriba derecha
+            [9.852867, -83.945326], // Esquina abajo derecha
+            [9.852896, -83.945495]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("41F");
+
+        var inclinedHouse = L.polygon([
+            [9.852933, -83.945645], // Esquina arriba izquierda
+            [9.852896, -83.945495], // Esquina arriba derecha
+            [9.852830, -83.945511], // Esquina abajo derecha
+            [9.852861, -83.945659]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("13F");
+
+        var inclinedHouse = L.polygon([
+            [9.852896, -83.945495], // Esquina arriba izquierda
+            [9.852867, -83.945326], // Esquina arriba derecha
+            [9.852798, -83.945345], // Esquina abajo derecha
+            [9.852830, -83.945511]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("42F");
+
+        var inclinedHouse = L.polygon([
+            [9.852861, -83.945659], // Esquina arriba izquierda
+            [9.852830, -83.945511], // Esquina arriba derecha
+            [9.852758, -83.945530], // Esquina abajo derecha
+            [9.852793, -83.945678]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("12F");
+
+        var inclinedHouse = L.polygon([
+            [9.852830, -83.945511], // Esquina arriba izquierda
+            [9.852798, -83.945345], // Esquina arriba derecha
+            [9.852732, -83.945358], // Esquina abajo derecha
+            [9.852758, -83.945530]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("43F");
+
+        var inclinedHouse = L.polygon([
+            [9.852793, -83.945678], // Esquina arriba izquierda
+            [9.852758, -83.945530], // Esquina arriba derecha
+            [9.852687, -83.945541], // Esquina abajo derecha
+            [9.852714, -83.945691]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("11F");
+
+        var inclinedHouse = L.polygon([
+            [9.852758, -83.945530], // Esquina arriba izquierda
+            [9.852732, -83.945358], // Esquina arriba derecha
+            [9.852661, -83.945380], // Esquina abajo derecha
+            [9.852687, -83.945541]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("44F");
+
+        var inclinedHouse = L.polygon([
+            [9.852714, -83.945691], // Esquina arriba izquierda
+            [9.852687, -83.945541], // Esquina arriba derecha
+            [9.852621, -83.945560], // Esquina abajo derecha
+            [9.852645, -83.945712]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("10F");
+
+        var inclinedHouse = L.polygon([
+            [9.852687, -83.945541], // Esquina arriba izquierda
+            [9.852661, -83.945380], // Esquina arriba derecha
+            [9.852584, -83.945393], // Esquina abajo derecha
+            [9.852621, -83.945560]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("45F");
+
+        var inclinedHouse = L.polygon([
+            [9.852645, -83.945712], // Esquina arriba izquierda
+            [9.852621, -83.945560], // Esquina arriba derecha
+            [9.852544, -83.945573], // Esquina abajo derecha
+            [9.852573, -83.945718]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("9F"); 
+
+        var inclinedHouse = L.polygon([
+            [9.852621, -83.945560], // Esquina arriba izquierda
+            [9.852584, -83.945393], // Esquina arriba derecha
+            [9.852518, -83.945407], // Esquina abajo derecha
+            [9.852544, -83.945573]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("46F");
+
+        var inclinedHouse = L.polygon([
+            [9.852573, -83.945718], // Esquina arriba izquierda
+            [9.852544, -83.945573], // Esquina arriba derecha
+            [9.852473, -83.945589], // Esquina abajo derecha
+            [9.852505, -83.945734]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("8F");
+
+        var inclinedHouse = L.polygon([
+            [9.852544, -83.945573], // Esquina arriba izquierda
+            [9.852518, -83.945407], // Esquina arriba derecha
+            [9.852449, -83.945423], // Esquina abajo derecha
+            [9.852473, -83.945589]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("47F");
+
+        var inclinedHouse = L.polygon([
+            [9.852505, -83.945734], // Esquina arriba izquierda
+            [9.852473, -83.945589], // Esquina arriba derecha
+            [9.852399, -83.945600], // Esquina abajo derecha
+            [9.852441, -83.945750]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("7F");
+
+        var inclinedHouse = L.polygon([
+            [9.852473, -83.945589], // Esquina arriba izquierda
+            [9.852449, -83.945423], // Esquina arriba derecha
+            [9.8523752, -83.94544], // Esquina abajo derecha
+            [9.852399, -83.945600]  // Esquina abajo izquierda 
+        ], { 
+            color: "#609b64",
+            weight: 1
+        }).addTo(map).bindPopup("48F");
+
+        var inclinedHouse = L.polygon([
+            [9.852441, -83.945750], // Esquina arriba izquierda
+            [9.852399, -83.945600], // Esquina arriba derecha
+            [9.852330, -83.945611], // Esquina abajo derecha
+            [9.852351, -83.945766]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("6F");
+
+        var inclinedHouse = L.polygon([
+            [9.852399, -83.945600], // Esquina arriba izquierda
+            [9.8523752, -83.94544], // Esquina arriba derecha
+            [9.852304, -83.945460], // Esquina abajo derecha
+            [9.852330, -83.945611]  // Esquina abajo izquierda 
+        ], { 
+            color: "#609b64",
+            weight: 1
+        }).addTo(map).bindPopup("49F");
+
+        var inclinedHouse = L.polygon([
+            [9.852351, -83.945766], // Esquina arriba izquierda
+            [9.852330, -83.945611], // Esquina arriba derecha
+            [9.852256, -83.945627], // Esquina abajo derecha
+            [9.852283, -83.945782]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("5F");
+
+        var inclinedHouse = L.polygon([
+            [9.852330, -83.945611], // Esquina arriba izquierda
+            [9.852304, -83.945460], // Esquina arriba derecha
+            [9.852235, -83.945476], // Esquina abajo derecha
+            [9.852256, -83.945627]  // Esquina abajo izquierda 
+        ], { 
+            color: "#609b64",
+            weight: 1
+        }).addTo(map).bindPopup("50F");
+
+        var inclinedHouse = L.polygon([
+            [9.852283, -83.945782], // Esquina arriba izquierda
+            [9.852256, -83.945627], // Esquina arriba derecha
+            [9.852182, -83.945643], // Esquina abajo derecha
+            [9.852214, -83.945798]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("4F");
+
+        var inclinedHouse = L.polygon([
+            [9.852256, -83.945627], // Esquina arriba izquierda
+            [9.852235, -83.945476], // Esquina arriba derecha
+            [9.852161, -83.945487], // Esquina abajo derecha
+            [9.852182, -83.945643]  // Esquina abajo izquierda 
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("51F");
+
+        var inclinedHouse = L.polygon([
+            [9.852214, -83.945798], // Esquina arriba izquierda
+            [9.852182, -83.945643], // Esquina arriba derecha
+            [9.852098, -83.945664], // Esquina abajo derecha
+            [9.852135, -83.945820]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("3F");
+
+        var inclinedHouse = L.polygon([
+            [9.852182, -83.945643], // Esquina arriba izquierda
+            [9.852161, -83.945487], // Esquina arriba derecha
+            [9.852090, -83.945503], // Esquina abajo derecha
+            [9.852122, -83.945656]  // Esquina abajo izquierda 
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("52F");
+
+        var inclinedHouse = L.polygon([
+            [9.852135, -83.945820], // Esquina arriba izquierda
+            [9.852098, -83.945664], // Esquina arriba derecha
+            [9.852018, -83.945686], // Esquina abajo derecha
+            [9.852045, -83.945836]  // Esquina abajo izquierda 
+        ], {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("2F");
+
+        var inclinedHouse = L.polygon([
+            [9.852122, -83.945656], // Esquina arriba izquierda
+            [9.852090, -83.945503], // Esquina arriba derecha
+            [9.852013, -83.945525], // Esquina abajo derecha
+            [9.852018, -83.945686]  // Esquina abajo izquierda 
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("53F");
+
+        var inclinedHouse = L.polygon([
+            [9.852045, -83.945836], // Esquina arriba izquierda
+            [9.852018, -83.945686], // Esquina arriba derecha
+            [9.851939, -83.945702], // Esquina abajo derecha
+            [9.851934, -83.945857]  // Esquina abajo izquierda 
+        ], {
+            color: "#609b64",
+            weight: 1
+        }).addTo(map).bindPopup("1F");
+
+        var inclinedHouse = L.polygon([
+            [9.852018, -83.945686], // Esquina arriba izquierda
+            [9.852013, -83.945525], // Esquina arriba derecha
+            [9.851952, -83.945543], // Esquina abajo derecha
+            [9.851939, -83.945702]  // Esquina abajo izquierda 
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("54F");
+
+        var inclinedHouse = L.polygon([
+            [9.853778, -83.945053], // Esquina arriba izquierda
+            [9.853763, -83.944964], // Esquina arriba derecha
+            [9.853596, -83.944956], // Esquina abajo derecha 
+            [9.853617, -83.945082], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("23G");
+
+        var inclinedHouse = L.polygon([
+            [9.853617, -83.945082], // Esquina arriba izquierda
+            [9.853596, -83.944956], // Esquina arriba derecha
+            [9.853509, -83.944943], // Esquina abajo derecha 
+            [9.853541, -83.945096], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("22G");
+
+        var inclinedHouse = L.polygon([
+            [9.853541, -83.945096], // Esquina arriba izquierda
+            [9.853509, -83.944943], // Esquina arriba derecha
+            [9.853440, -83.944959], // Esquina abajo derecha 
+            [9.853469, -83.945109], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("21G");
+
+        var inclinedHouse = L.polygon([
+            [9.853469, -83.945109], // Esquina arriba izquierda
+            [9.853440, -83.944959], // Esquina arriba derecha
+            [9.853369, -83.944975], // Esquina abajo derecha 
+            [9.853398, -83.945128], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("20G");
+
+        var inclinedHouse = L.polygon([
+            [9.853398, -83.945128], // Esquina arriba izquierda
+            [9.853369, -83.944975], // Esquina arriba derecha
+            [9.853292, -83.944988], // Esquina abajo derecha 
+            [9.853329, -83.945147], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("19G");
+
+        var inclinedHouse = L.polygon([
+            [9.853329, -83.945147], // Esquina arriba izquierda
+            [9.853292, -83.944988], // Esquina arriba derecha
+            [9.853229, -83.945004], // Esquina abajo derecha 
+            [9.853258, -83.945160], // Esquina abajo izquierda
+        ], { 
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map).bindPopup("18G");
+
+
+
+
+        // Cargar datos geoJson
+        var buildings = { //edificios
+            
+            "type": "FeatureCollection",
+            "name": "buildings",
+            "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+            "features": [
+            { "type": "Feature", "properties": { "osm_id": 1315444543, "building": "house", "name": "54F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457031, 9.8519107 ], [ -83.9456169, 9.8519144 ], [ -83.9455405, 9.8519385 ], [ -83.9455207, 9.8520082 ], [ -83.945682, 9.8520277 ], [ -83.9457031, 9.8519107 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444515, "building": "house", "name": "2F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9458277, 9.8520474 ], [ -83.945682, 9.8520277 ], [ -83.9456661, 9.8521025 ], [ -83.9458134, 9.8521314 ], [ -83.9458277, 9.8520474 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444514, "building": "house", "name": "3F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9458134, 9.8521314 ], [ -83.9456661, 9.8521025 ], [ -83.9456593, 9.852123 ], [ -83.945642, 9.852183 ], [ -83.9457953, 9.8522169 ], [ -83.9458134, 9.8521314 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444542, "building": "house", "name": "53F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.945682, 9.8520277 ], [ -83.9455207, 9.8520082 ], [ -83.9455009, 9.8520928 ], [ -83.9456593, 9.852123 ], [ -83.945682, 9.8520277 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444541, "building": "house", "name": "52F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456593, 9.852123 ], [ -83.9455009, 9.8520928 ], [ -83.945484, 9.8521653 ], [ -83.945642, 9.852183 ], [ -83.9456593, 9.852123 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444513, "building": "house", "name": "4F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457953, 9.8522169 ], [ -83.945642, 9.852183 ], [ -83.9456256, 9.8522619 ], [ -83.9457789, 9.8522882 ], [ -83.9457953, 9.8522169 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444512, "building": "house", "name": "5F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457789, 9.8522882 ], [ -83.9456256, 9.8522619 ], [ -83.9456131, 9.8523273 ], [ -83.9457707, 9.8523519 ], [ -83.9457789, 9.8522882 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444540, "building": "house", "name": "51F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.945642, 9.852183 ], [ -83.945484, 9.8521653 ], [ -83.9454679, 9.8522355 ], [ -83.9456256, 9.8522619 ], [ -83.945642, 9.852183 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444511, "building": "house", "name": "6F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457707, 9.8523519 ], [ -83.9456131, 9.8523273 ], [ -83.9456006, 9.8524041 ], [ -83.9457539, 9.8524406 ], [ -83.9457707, 9.8523519 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444510, "building": "house", "name": "7F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457539, 9.8524406 ], [ -83.9456006, 9.8524041 ], [ -83.9455868, 9.8524799 ], [ -83.9457376, 9.8525121 ], [ -83.9457539, 9.8524406 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444509, "building": "house", "name": "8F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457376, 9.8525121 ], [ -83.9455868, 9.8524799 ], [ -83.9455731, 9.8525502 ], [ -83.9457221, 9.8525774 ], [ -83.9457376, 9.8525121 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444508, "building": "house", "name": "9F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457221, 9.8525774 ], [ -83.9455731, 9.8525502 ], [ -83.9455558, 9.8526195 ], [ -83.94571, 9.8526535 ], [ -83.9457221, 9.8525774 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444507, "building": "house", "name": "10F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.94571, 9.8526535 ], [ -83.9455558, 9.8526195 ], [ -83.9455421, 9.8526883 ], [ -83.9456928, 9.852718 ], [ -83.94571, 9.8526535 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444536, "building": "house", "name": "47F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455868, 9.8524799 ], [ -83.9454227, 9.8524511 ], [ -83.9454028, 9.852516 ], [ -83.9455731, 9.8525502 ], [ -83.9455868, 9.8524799 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444535, "building": "house", "name": "46F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455731, 9.8525502 ], [ -83.9454028, 9.852516 ], [ -83.9453861, 9.8525854 ], [ -83.9455558, 9.8526195 ], [ -83.9455731, 9.8525502 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444534, "building": "house", "name": "45F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455558, 9.8526195 ], [ -83.9453861, 9.8525854 ], [ -83.9453722, 9.8526572 ], [ -83.9455421, 9.8526883 ], [ -83.9455558, 9.8526195 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444506, "building": "house", "name": "11F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456928, 9.852718 ], [ -83.9455421, 9.8526883 ], [ -83.9455248, 9.852757 ], [ -83.9456756, 9.8527901 ], [ -83.9456928, 9.852718 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444505, "building": "house", "name": "12F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456756, 9.8527901 ], [ -83.9455248, 9.852757 ], [ -83.9455085, 9.8528325 ], [ -83.9456601, 9.8528614 ], [ -83.9456756, 9.8527901 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444504, "building": "house", "name": "13F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456601, 9.8528614 ], [ -83.9455085, 9.8528325 ], [ -83.945493, 9.8528996 ], [ -83.945648, 9.8529293 ], [ -83.9456601, 9.8528614 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444503, "building": "house", "name": "14F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.945648, 9.8529293 ], [ -83.945493, 9.8528996 ], [ -83.9454801, 9.8529683 ], [ -83.9456334, 9.8529997 ], [ -83.945648, 9.8529293 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444533, "building": "house", "name": "44F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455421, 9.8526883 ], [ -83.9453722, 9.8526572 ], [ -83.9453564, 9.8527294 ], [ -83.9455248, 9.852757 ], [ -83.9455421, 9.8526883 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444532, "building": "house", "name": "43F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455248, 9.852757 ], [ -83.9453564, 9.8527294 ], [ -83.9453407, 9.8527992 ], [ -83.9455085, 9.8528325 ], [ -83.9455248, 9.852757 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444531, "building": "house", "name": "42F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455085, 9.8528325 ], [ -83.9453407, 9.8527992 ], [ -83.945324, 9.8528672 ], [ -83.945493, 9.8528996 ], [ -83.9455085, 9.8528325 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444530, "building": "house", "name": "41F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.945493, 9.8528996 ], [ -83.945324, 9.8528672 ], [ -83.9453064, 9.8529402 ], [ -83.9454801, 9.8529683 ], [ -83.945493, 9.8528996 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444529, "building": "house", "name": "40F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454801, 9.8529683 ], [ -83.9453064, 9.8529402 ], [ -83.9452925, 9.8530087 ], [ -83.9454637, 9.8530421 ], [ -83.9454801, 9.8529683 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444502, "building": "house", "name": "15F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456334, 9.8529997 ], [ -83.9454801, 9.8529683 ], [ -83.9454637, 9.8530421 ], [ -83.9456222, 9.8530744 ], [ -83.9456334, 9.8529997 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444501, "building": "house", "name": "16F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456222, 9.8530744 ], [ -83.9454637, 9.8530421 ], [ -83.9454525, 9.8531113 ], [ -83.9456084, 9.8531444 ], [ -83.9456222, 9.8530744 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444500, "building": "house", "name": "17F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456084, 9.8531444 ], [ -83.9454525, 9.8531113 ], [ -83.9454353, 9.8531851 ], [ -83.9455903, 9.8532174 ], [ -83.9456084, 9.8531444 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444528, "building": "house", "name": "39F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454637, 9.8530421 ], [ -83.9452925, 9.8530087 ], [ -83.9452758, 9.8530758 ], [ -83.9454525, 9.8531113 ], [ -83.9454637, 9.8530421 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444527, "building": "house", "name": "38F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454525, 9.8531113 ], [ -83.9452758, 9.8530758 ], [ -83.94526, 9.8531567 ], [ -83.9454353, 9.8531851 ], [ -83.9454525, 9.8531113 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444499, "building": "house", "name": "18F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455903, 9.8532174 ], [ -83.9454353, 9.8531851 ], [ -83.9454155, 9.8532607 ], [ -83.9455748, 9.8532921 ], [ -83.9455903, 9.8532174 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444526, "building": "house", "name": "37F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454353, 9.8531851 ], [ -83.94526, 9.8531567 ], [ -83.9452452, 9.8532273 ], [ -83.9454155, 9.8532607 ], [ -83.9454353, 9.8531851 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444525, "building": "house", "name": "36F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454155, 9.8532607 ], [ -83.9452452, 9.8532273 ], [ -83.9452303, 9.8533066 ], [ -83.9454, 9.8533364 ], [ -83.9454155, 9.8532607 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444524, "building": "house", "name": "35F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454, 9.8533364 ], [ -83.9452303, 9.8533066 ], [ -83.9452192, 9.8533662 ], [ -83.945387, 9.8534055 ], [ -83.9454, 9.8533364 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444549, "building": "house", "name": "18G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9451601, 9.8532572 ], [ -83.945003, 9.853227 ], [ -83.944986, 9.853295 ], [ -83.9451458, 9.8533285 ], [ -83.9451601, 9.8532572 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444548, "building": "house", "name": "19G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9451458, 9.8533285 ], [ -83.944986, 9.853295 ], [ -83.944971, 9.8533693 ], [ -83.9451295, 9.8534015 ], [ -83.9451458, 9.8533285 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444497, "building": "house", "name": "20F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455558, 9.8533678 ], [ -83.9454, 9.8533364 ], [ -83.945387, 9.8534055 ], [ -83.9455438, 9.8534327 ], [ -83.9455558, 9.8533678 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444496, "building": "house", "name": "21F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455438, 9.8534327 ], [ -83.945387, 9.8534055 ], [ -83.9453724, 9.8534658 ], [ -83.9455317, 9.8534938 ], [ -83.9455438, 9.8534327 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444495, "building": "house", "name": "22F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455317, 9.8534938 ], [ -83.9453724, 9.8534658 ], [ -83.9453586, 9.8535447 ], [ -83.9455171, 9.8535718 ], [ -83.9455317, 9.8534938 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444523, "building": "house", "name": "34F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.945387, 9.8534055 ], [ -83.9452192, 9.8533662 ], [ -83.9452053, 9.853434 ], [ -83.9453724, 9.8534658 ], [ -83.945387, 9.8534055 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444522, "building": "house", "name": "33F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9453724, 9.8534658 ], [ -83.9452053, 9.853434 ], [ -83.9451886, 9.8535088 ], [ -83.9453586, 9.8535447 ], [ -83.9453724, 9.8534658 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444494, "building": "house", "name": "23F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455171, 9.8535718 ], [ -83.9453586, 9.8535447 ], [ -83.9453405, 9.8536156 ], [ -83.9455024, 9.8536436 ], [ -83.9455171, 9.8535718 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444493, "building": "house", "name": "24F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455024, 9.8536436 ], [ -83.9453405, 9.8536156 ], [ -83.9453285, 9.8536843 ], [ -83.9454869, 9.8537132 ], [ -83.9455024, 9.8536436 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444521, "building": "house", "name": "32F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9453586, 9.8535447 ], [ -83.9451886, 9.8535088 ], [ -83.9451775, 9.8535786 ], [ -83.9453405, 9.8536156 ], [ -83.9453586, 9.8535447 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444520, "building": "house", "name": "31F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9453405, 9.8536156 ], [ -83.9451775, 9.8535786 ], [ -83.9451652, 9.8536508 ], [ -83.9453285, 9.8536843 ], [ -83.9453405, 9.8536156 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444519, "building": "house", "name": "30F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9453285, 9.8536843 ], [ -83.9451652, 9.8536508 ], [ -83.9451492, 9.8537308 ], [ -83.9453118, 9.8537596 ], [ -83.9453285, 9.8536843 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444492, "building": "house", "name": "25F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454869, 9.8537132 ], [ -83.9453285, 9.8536843 ], [ -83.9453118, 9.8537596 ], [ -83.9454691, 9.8537874 ], [ -83.9454869, 9.8537132 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315436655, "building": "house", "name": "26F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454691, 9.8537874 ], [ -83.9453118, 9.8537596 ], [ -83.9452965, 9.8538324 ], [ -83.9454511, 9.8538619 ], [ -83.9454691, 9.8537874 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444518, "building": "house", "name": "29F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9453118, 9.8537596 ], [ -83.9451492, 9.8537308 ], [ -83.9451409, 9.8537993 ], [ -83.9452965, 9.8538324 ], [ -83.9453118, 9.8537596 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444517, "building": "house", "name": "28F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9452965, 9.8538324 ], [ -83.9451409, 9.8537993 ], [ -83.94513, 9.8538735 ], [ -83.9451631, 9.8538987 ], [ -83.9452777, 9.8539233 ], [ -83.9452965, 9.8538324 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315436654, "building": "house", "name": "27F" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9454511, 9.8538619 ], [ -83.9452965, 9.8538324 ], [ -83.9452777, 9.8539233 ], [ -83.9454075, 9.853944 ], [ -83.9454362, 9.8539303 ], [ -83.9454511, 9.8538619 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444547, "building": "house", "name": "20G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9451295, 9.8534015 ], [ -83.944971, 9.8533693 ], [ -83.9449567, 9.8534356 ], [ -83.9451132, 9.8534698 ], [ -83.9451295, 9.8534015 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444546, "building": "house", "name": "21G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9451132, 9.8534698 ], [ -83.9449567, 9.8534356 ], [ -83.9449397, 9.8535084 ], [ -83.9450982, 9.8535406 ], [ -83.9451132, 9.8534698 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444545, "building": "house", "name": "22G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9450982, 9.8535406 ], [ -83.9449397, 9.8535084 ], [ -83.9449523, 9.8535944 ], [ -83.9450788, 9.8536181 ], [ -83.9450982, 9.8535406 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444544, "building": "house", "name": "23G" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9450788, 9.8536181 ], [ -83.9449523, 9.8535944 ], [ -83.9449685, 9.8537694 ], [ -83.9450492, 9.8537792 ], [ -83.9450788, 9.8536181 ] ] ] } }
+            ]
+
+
+        };
+
+        L.geoJson(buildings, {
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            }
+        }).addTo(map);
+
+        //suelo
+        var landcover = {
+            "type": "FeatureCollection",
+            "name": "landcover",
+            "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+            "features": [
+            { "type": "Feature", "properties": { "osm_id": 1098997383, "leisure": "park", "amenity": null, "operator": null, "building": null, "name": "Parque", "landuse": null, "natural": null, "addr:city": null, "operator:type": null, "addr:postcode": null, "healthcare": null, "operator:wikidata": null, "addr:street": null, "capacity": null, "name:it": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9470602, 9.8519315 ], [ -83.9469233, 9.8519016 ], [ -83.9469023, 9.8520146 ], [ -83.9469815, 9.8520369 ], [ -83.947044, 9.8520044 ], [ -83.9470602, 9.8519315 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1013232996, "leisure": null, "amenity": "clinic", "operator": "CCSS", "building": "yes", "name": "Ebais Parque Industrial", "landuse": null, "natural": null, "addr:city": "Guadalupe", "operator:type": "public", "addr:postcode": "30106", "healthcare": "clinic", "operator:wikidata": "Q5174896", "addr:street": "Avenida 28", "capacity": null, "name:it": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9476901, 9.85238 ], [ -83.9474566, 9.8523325 ], [ -83.9474415, 9.8524048 ], [ -83.9472247, 9.8523607 ], [ -83.9472163, 9.8524006 ], [ -83.9471974, 9.8524909 ], [ -83.9471782, 9.8525829 ], [ -83.9471598, 9.8526705 ], [ -83.9471426, 9.8527529 ], [ -83.9471277, 9.8528239 ], [ -83.9475779, 9.8529154 ], [ -83.9476857, 9.852401 ], [ -83.9476901, 9.85238 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1098997380, "leisure": "park", "amenity": null, "operator": null, "building": null, "name": "Parque", "landuse": null, "natural": null, "addr:city": null, "operator:type": null, "addr:postcode": null, "healthcare": null, "operator:wikidata": null, "addr:street": null, "capacity": null, "name:it": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9457186, 9.8541154 ], [ -83.945629, 9.8540959 ], [ -83.9455921, 9.8542576 ], [ -83.9455863, 9.854283 ], [ -83.9455394, 9.8544889 ], [ -83.9456337, 9.8545075 ], [ -83.9456774, 9.8543153 ], [ -83.9457186, 9.8541154 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444839, "leisure": null, "amenity": null, "operator": null, "building": null, "name": "Grassland", "landuse": null, "natural": "grassland", "addr:city": null, "operator:type": null, "addr:postcode": null, "healthcare": null, "operator:wikidata": null, "addr:street": null, "capacity": null, "name:it": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9450492, 9.8537792 ], [ -83.9449685, 9.8537694 ], [ -83.9450128, 9.8539526 ], [ -83.9450492, 9.8537792 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1098997381, "leisure": "park", "amenity": null, "operator": null, "building": null, "name": "Parque", "landuse": null, "natural": null, "addr:city": null, "operator:type": null, "addr:postcode": null, "healthcare": null, "operator:wikidata": null, "addr:street": null, "capacity": null, "name:it": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9450401, 9.8544563 ], [ -83.9449458, 9.8543411 ], [ -83.9449845, 9.8539667 ], [ -83.9445375, 9.8539016 ], [ -83.944545, 9.8540299 ], [ -83.9445696, 9.8542278 ], [ -83.9446403, 9.854422 ], [ -83.9450251, 9.8545177 ], [ -83.9450401, 9.8544563 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444516, "natural": "grassland", "name": "1F", "landuse": null, "leisure": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9458478, 9.8519438 ], [ -83.9458297, 9.8519192 ], [ -83.9457031, 9.8519107 ], [ -83.945682, 9.8520277 ], [ -83.9458277, 9.8520474 ], [ -83.9458478, 9.8519438 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444539, "natural": "grassland", "name": "50F", "landuse": null, "leisure": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456256, 9.8522619 ], [ -83.9454679, 9.8522355 ], [ -83.9454547, 9.8523024 ], [ -83.9456131, 9.8523273 ], [ -83.9456256, 9.8522619 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444538, "natural": "grassland", "name": "49F", "landuse": null, "leisure": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456131, 9.8523273 ], [ -83.9454547, 9.8523024 ], [ -83.9454387, 9.8523749 ], [ -83.9456006, 9.8524041 ], [ -83.9456131, 9.8523273 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444537, "natural": "grassland", "name": "48F", "landuse": null, "leisure": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9456006, 9.8524041 ], [ -83.9454387, 9.8523749 ], [ -83.9454227, 9.8524511 ], [ -83.9455868, 9.8524799 ], [ -83.9456006, 9.8524041 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1315444498, "natural": "grassland", "name": "19F", "landuse": null, "leisure": null, "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9455748, 9.8532921 ], [ -83.9454155, 9.8532607 ], [ -83.9454, 9.8533364 ], [ -83.9455558, 9.8533678 ], [ -83.9455748, 9.8532921 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1098997381, "natural": null, "name": "Parque de perros", "landuse": null, "leisure": "park", "short_name": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9450401, 9.8544563 ], [ -83.9449458, 9.8543411 ], [ -83.9449845, 9.8539667 ], [ -83.9445375, 9.8539016 ], [ -83.944545, 9.8540299 ], [ -83.9445696, 9.8542278 ], [ -83.9446403, 9.854422 ], [ -83.9450251, 9.8545177 ], [ -83.9450401, 9.8544563 ] ] ] } }
+            ]
+        };
+        L.geoJson(landcover, {
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            }
+        }).addTo(map);
+
+        //Calles
+        var roads = {
+            "type": "FeatureCollection",
+            "name": "roads",
+            "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+            "features": [
+            { "type": "Feature", "properties": { "osm_id": 817022476, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": null, "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.948414, 9.8523775 ], [ -83.9482436, 9.8523509 ], [ -83.9474705, 9.8522302 ], [ -83.9473275, 9.8522093 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 102367961, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Calle 58", "oneway": null, "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9470631, 9.8523121 ], [ -83.9466187, 9.8542681 ], [ -83.94654, 9.8546267 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704471, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": null, "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9469498, 9.8521182 ], [ -83.9466686, 9.8520522 ], [ -83.9462804, 9.8519796 ], [ -83.9459007, 9.8519065 ], [ -83.9458585, 9.8519033 ], [ -83.9456534, 9.851901 ], [ -83.9456355, 9.8519033 ], [ -83.9456184, 9.8519058 ], [ -83.9454821, 9.8519462 ], [ -83.9450434, 9.852101 ], [ -83.9446079, 9.852257 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1196818176, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9473275, 9.8522093 ], [ -83.9472119, 9.8521905 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1198393662, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.947188, 9.852254 ], [ -83.9473222, 9.8522776 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 51741333, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": null, "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9473222, 9.8522776 ], [ -83.9474589, 9.8523017 ], [ -83.9476654, 9.852338 ], [ -83.9482259, 9.85243 ], [ -83.948394, 9.852459 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 102350384, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.947188, 9.852254 ], [ -83.947204, 9.8522237 ], [ -83.9472119, 9.8521905 ], [ -83.9472084, 9.8521432 ], [ -83.9471886, 9.8521 ], [ -83.9471551, 9.8520661 ], [ -83.9471117, 9.8520456 ], [ -83.9470639, 9.8520409 ], [ -83.9470173, 9.8520527 ], [ -83.9469777, 9.8520796 ], [ -83.9469498, 9.8521182 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1198393481, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 28", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9469498, 9.8521182 ], [ -83.9469367, 9.8521688 ], [ -83.9469438, 9.8522205 ], [ -83.9469703, 9.8522658 ], [ -83.9470121, 9.8522979 ], [ -83.9470631, 9.8523121 ], [ -83.9470991, 9.8523104 ], [ -83.9471334, 9.8522996 ], [ -83.9471638, 9.8522803 ], [ -83.947188, 9.852254 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704490, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Calle 56B", "oneway": null, "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9466686, 9.8520522 ], [ -83.9462146, 9.8541791 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704471, "access": "private", "highway": "residential", "surface": "asphalt", "name": "Avenida 28" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9469498, 9.8521182 ], [ -83.9466686, 9.8520522 ], [ -83.9462804, 9.8519796 ], [ -83.9459007, 9.8519065 ], [ -83.9458585, 9.8519033 ], [ -83.9456534, 9.851901 ], [ -83.9456355, 9.8519033 ], [ -83.9456184, 9.8519058 ], [ -83.9454821, 9.8519462 ], [ -83.9450434, 9.852101 ], [ -83.9446079, 9.852257 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704484, "access": "private", "highway": "residential", "surface": "asphalt", "name": "Calle 56" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9459007, 9.8519065 ], [ -83.9454508, 9.8540163 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704477, "access": "private", "highway": "residential", "surface": "asphalt", "name": "Calle 54A" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9454821, 9.8519462 ], [ -83.9450537, 9.8539317 ], [ -83.9450372, 9.8540125 ], [ -83.9449883, 9.8543303 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 102367958, "ref": null, "highway": "residential", "surface": "asphalt", "name": null, "oneway": "yes", "access": "private", "service": null, "junction": "roundabout", "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.946502, 9.8546249 ], [ -83.9464651, 9.854634 ], [ -83.9464324, 9.8546531 ], [ -83.9464067, 9.8546807 ], [ -83.94639, 9.8547144 ], [ -83.9463839, 9.8547571 ], [ -83.9463924, 9.8547994 ], [ -83.9464146, 9.8548367 ], [ -83.9464479, 9.8548646 ], [ -83.9464888, 9.8548802 ], [ -83.9465289, 9.8548821 ], [ -83.9465677, 9.8548719 ], [ -83.9466016, 9.8548507 ], [ -83.9466192, 9.854833 ], [ -83.9466408, 9.8547903 ], [ -83.9466462, 9.8547545 ], [ -83.9466396, 9.854713 ], [ -83.9466177, 9.854673 ], [ -83.946583, 9.854643 ], [ -83.94654, 9.8546267 ], [ -83.946502, 9.8546249 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704475, "access": "private", "highway": "residential", "surface": "asphalt", "name": "Avenida 22" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9466187, 9.8542681 ], [ -83.9462146, 9.8541791 ], [ -83.945829, 9.8541006 ], [ -83.9456306, 9.8540604 ], [ -83.9454508, 9.8540163 ], [ -83.9450537, 9.8539317 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 107704487, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 20", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9473299, 9.854978 ], [ -83.9472132, 9.8549414 ], [ -83.9469396, 9.8548631 ], [ -83.9466971, 9.8547865 ], [ -83.9466657, 9.8547704 ], [ -83.9466462, 9.8547545 ] ] } },
+{ "type": "Feature", "properties": { "osm_id": 701159880, "ref": null, "highway": "residential", "surface": "asphalt", "name": "Avenida 20", "oneway": "yes", "access": "private", "service": null, "junction": null, "lit": null, "maxspeed": null, "lanes": null, "destination:ref": null }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9466192, 9.854833 ], [ -83.9466459, 9.8548381 ], [ -83.946689, 9.8548485 ], [ -83.9469278, 9.8549173 ], [ -83.9473253, 9.8550421 ] ] } }
+            ]
+
+        }
+
+        var roads_style = {
+            color: 'black', 
+            weight: 4, 
+            opacity: 0.7 
+        }
+
+        L.geoJson(roads, {
+            style: roads_style, onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            }
+        }).addTo(map);
+
+
+        //Red Electrica
+        var power_lines = { 
+            "type": "FeatureCollection",
+            "name": "power_lines",
+            "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+            "features": [
+            { "type": "Feature", "properties": { "osm_id": 1316295449, "power": "minor_line", "name": "Red eléctrica" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9455349, 9.8518612 ], [ -83.9459406, 9.8518347 ], [ -83.9458975, 9.8520327 ], [ -83.94581, 9.8524346 ], [ -83.9457154, 9.8528697 ], [ -83.9456051, 9.8533763 ], [ -83.9454977, 9.8538699 ], [ -83.9454606, 9.8540404 ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1316295448, "power": "minor_line", "name": "Red Eléctrica" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.9450666, 9.8540587 ], [ -83.9451217, 9.8538032 ], [ -83.9452293, 9.8533045 ], [ -83.9453366, 9.8527976 ], [ -83.9454267, 9.8523723 ], [ -83.9455064, 9.8519957 ], [ -83.9455349, 9.8518612 ] ] } }
+            ]
+        };
+
+        var power_style = {
+            color: 'yellow', // Cambia el color aquí
+            weight: 4, // Grosor de la línea
+            opacity: 0.7 // Opacidad
+        };
+        
+        L.geoJson(power_lines, {
+           style: power_style, onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            }
+        }).addTo(map);
+
+
+        //Areas
+        var areas = {
+            "type": "FeatureCollection",
+            "name": "amenity_polygons",
+            "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+            "features": [
+            { "type": "Feature", "properties": { "osm_id": 1013232996, "shop": null, "building": "yes", "name": "Ebais Parque Industrial", "amenity": "clinic", "operator": "CCSS", "brand": null, "addr:city": "Guadalupe", "operator:type": "public", "addr:postcode": "30106", "healthcare": "clinic", "operator:wikidata": "Q5174896", "addr:street": "Avenida 28", "cuisine": null, "official_name": null, "brand:wikidata": null, "branch": null, "takeaway": null, "brand:wikipedia": null, "capacity": null, "website": null, "drive_through": null, "outdoor_seating": null, "phone": null, "not:brand:wikidata": null, "opening_hours": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9476901, 9.85238 ], [ -83.9474566, 9.8523325 ], [ -83.9474415, 9.8524048 ], [ -83.9472247, 9.8523607 ], [ -83.9472163, 9.8524006 ], [ -83.9471974, 9.8524909 ], [ -83.9471782, 9.8525829 ], [ -83.9471598, 9.8526705 ], [ -83.9471426, 9.8527529 ], [ -83.9471277, 9.8528239 ], [ -83.9475779, 9.8529154 ], [ -83.9476857, 9.852401 ], [ -83.9476901, 9.85238 ] ] ] } },
+            { "type": "Feature", "properties": { "osm_id": 1077589089, "shop": "deli", "building": "yes", "name": "AM PM", "amenity": null, "operator": null, "brand": null, "addr:city": null, "operator:type": null, "addr:postcode": null, "healthcare": null, "operator:wikidata": null, "addr:street": null, "cuisine": null, "official_name": null, "brand:wikidata": null, "branch": "Guadalupe de Cartago", "takeaway": null, "brand:wikipedia": null, "capacity": null, "website": "https:\/\/ampm.cr\/", "drive_through": null, "outdoor_seating": null, "phone": "+506 21052667", "not:brand:wikidata": "Q306960", "opening_hours": "Mo-Su 06:00-24:00" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.9475615, 9.8546968 ], [ -83.947415, 9.8546665 ], [ -83.9473852, 9.854818 ], [ -83.9475319, 9.8548492 ], [ -83.9475615, 9.8546968 ] ] ] } }
+            ]
+
+        }
+
+        var areas_style = {
+            color: 'blue', // Cambia el color aquí
+            weight: 4, // Grosor de la línea
+            opacity: 0.7 // Opacidad
+        };
+
+        L.geoJson(areas, {
+           style: areas_style, onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            }
+        }).addTo(map);
+
+        //Postes de Luz
+        var lightPole = L.marker([9.8538032, -83.9451217]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8533045, -83.9452293]).addTo(map);
+       lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8528479, -83.9453006]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8527976, -83.9453366]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+
+        var lightPole = L.marker([9.8523723, -83.9454267]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8519957, -83.9455064]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8518612, -83.9455349]).addTo(map);
+       lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8518347, -83.9459406]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8520327, -83.9458975]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8524346, -83.9458100]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8528697, -83.9457154]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8533763, -83.9456051]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+
+        var lightPole = L.marker([9.8538699, -83.9454977]).addTo(map);
+        lightPole.bindPopup("Poste de Luz").openPopup();
+   
+        
+    </script>
+</body>
+</html>
+
+
+
